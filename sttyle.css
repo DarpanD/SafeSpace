@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --first-color: #ff8080;
+  --second-color: #ffcf96;
+  --third-color: #f6fdc3;
+  --fourth-color: #cdfad5;
+  --font-color-one: white;
+}
+li {
+  list-style: none;
+}
+/* ===========nav bar ========== */
+.logoinheader {
+  font-size: 2rem;
+  text-decoration: none;
+}
+.headerlevel1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  background-color: transparent;
+  z-index: 1;
+}
+.headerlevel2 {
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.navlist {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-transform: uppercase;
+}
+.navlist a {
+  color: white;
+  text-decoration: none;
+}
+.identitybuttons a {
+  color: white;
+  text-decoration: none;
+}
+.logoinheader a {
+  color: white;
+  text-decoration: none;
+}
+.navitems,
+.idbutton {
+  list-style: none;
+  margin: 0 10px;
+}
+.identitybuttons {
+  display: flex;
+}
+/* ========dropdown======== */
+.dropdown {
+  display: none;
+  position: relative;
+  top: 20px;
+  left: auto;
+}
+.navitems:hover .dropdown {
+  display: inline;
+}
+
+.cardholder {
+  position: absolute;
+  background-color: aqua;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* flex-wrap: wrap; */
+  gap: 30px;
+  padding: 20px;
+}
+
+.cards {
+  background-color: bisque;
+  border: 3px solid gray;
+  border-radius: 20px;
+  width: 150px;
+  aspect-ratio: 2/2.5;
+}
+.cardcontents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cardimage {
+  width: 100px;
+  margin-top: 15px;
+}
+.cardtext {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.carddescription {
+  font-size: 10px;
+  padding: 0;
+  margin: 8px 0;
+}
+
+/* =========containts========= */
+.boxy1 {
+  background: linear-gradient(0deg, #1c9ad4b2, #1b9edbbd),
+    url(./assets/images/pexels-jacob-kelvinj-4515858.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  padding: 9rem 8rem;
+  text-align: center;
+}
+.slogan {
+  margin: 3% 0;
+  margin-bottom: 0px;
+  font-size: 2.5rem;
+  color: var(--font-color-one);
+}
+.hometext {
+  font-size: 1.5rem;
+  padding: 5% 20%;
+  text-align: justify;
+  color: var(--font-color-one);
+}
+.homespan {
+  margin: 1%;
+  margin-left: 30%;
+  text-align: left;
+}
+.buttondivision {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.buttondivision .bookbtn {
+  padding: 0.5rem 3rem;
+  font-size: 1.5em;
+  cursor: pointer;
+  border-radius: 40px;
+  border: 5px solid var(--fourth-color);
+  color: var(--fourth-color);
+  background-color: transparent;
+  transition: transform 0.5s ease;
+}
+
+.bookbtn:hover {
+  position: relative;
+  transform: scale(1.1);
+  background-color: var(--fourth-color);
+  color: black;
+}
