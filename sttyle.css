@@ -116,32 +116,29 @@ li {
 
 /* =========containts========= */
 .boxy1 {
-  background: linear-gradient(0deg, #1c9ad4b2, #1b9edbbd),
-    url(./assets/images/pexels-jacob-kelvinj-4515858.jpg);
+  background: linear-gradient(0deg, #1c9ad4b2, #1b9edbbd);
   background-size: cover;
   width: 100%;
   height: 100vh;
 }
 .container {
   padding: 9rem 8rem;
-  text-align: center;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .slogan {
   margin: 3% 0;
   margin-bottom: 0px;
   font-size: 2.5rem;
+  text-align: center;
   color: var(--font-color-one);
 }
 .hometext {
   font-size: 1.5rem;
-  padding: 5% 20%;
+  padding: 5% 0;
   text-align: justify;
   color: var(--font-color-one);
-}
-.homespan {
-  margin: 1%;
-  margin-left: 30%;
-  text-align: left;
 }
 .buttondivision {
   display: flex;
@@ -164,4 +161,11 @@ li {
   transform: scale(1.1);
   background-color: var(--fourth-color);
   color: black;
+}
+
+.roomImg {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: 80%;
+  margin: 10%;
 }
