@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resources</title>
+    <link rel="stylesheet" href="resources.css" />
+    <script src="resources.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <nav class="nav-links">
+        <img src="./assets/images/logoInWhite.png" alt="logo" class="logo" />
+        <ul>
+          <li><a class="active" href="home.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <!-- <li><a href="#">Resources</a></li> -->
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li class="btn">
+            <a href="login.html"><span style="color: white">Register</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div
+      class="media-item"
+      onclick="playMedia('assets/resources/audio/moonlight.mp3')"
+    >
+      <img src="assets/images/moonlight.jpg" alt="Audio" />
+      <p>Play Audio</p>
+    </div>
+
+    <div
+      class="media-item"
+      onclick="playMedia('assets/resources/audio/melodyOfNature.mp3')"
+    >
+      <img src="/assets/images/nature.jpg" alt="Audio" />
+      <p>Play Audio</p>
+    </div>
+
+    <div
+      class="media-item"
+      onclick="playMedia('assets/resources/video/standingpose.mp4')"
+    >
+      <img src="assets/images/yogaStandingPose.png" alt="Video" />
+      <p>Play Exercise Video</p>
+    </div>
+
+    <audio id="audioPlayer" controls style="display: none">
+      <source id="audioSource" src="" type="audio/mpeg" />
+    </audio>
+
+    <video id="videoPlayer" controls style="display: none">
+      <source id="videoSource" src="" type="video/mp4" />
+    </video>
+  </body>
+</html>

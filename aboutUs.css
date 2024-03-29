@@ -1,0 +1,155 @@
+* {
+  /* background-color: #ffdaca; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  height: 1%;
+  width: 100%;
+  padding: 0 8%;
+  background-color: #ffdaca;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 140px;
+  border-radius: 50%;
+}
+
+.nav-links {
+  padding: 28px 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 0;
+  position: relative;
+}
+
+.nav-links li a::after {
+  content: "";
+  background: #ff3d00;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s;
+}
+.active {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2c7bfe !important;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+#about-section {
+  width: 100%;
+
+  height: auto;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 25px 12%;
+}
+
+.about-right {
+  height: auto;
+
+  width: 64%;
+}
+
+.about-right ul li {
+  display: flex;
+
+  align-items: center;
+}
+
+.about-right h1 {
+  color: #e74d06;
+
+  font-size: 37px;
+
+  margin-bottom: 5px;
+}
+
+.about-right p {
+  color: #000;
+  font-family: "Kanit", sans-serif;
+  line-height: 25px;
+  font-size: 18px;
+}
+
+.about-right .address {
+  margin: 25px 0;
+}
+
+.about-right .address ul li {
+  margin-bottom: 5px;
+}
+
+.address .address-logo {
+  margin-right: 15px;
+
+  color: #e74d06;
+}
+
+.address .saprater {
+  margin: 0 35px;
+}
+
+.about-right .expertise ul {
+  width: 90%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.expertise h3 {
+  font-size: 27px;
+  color: #e74d06;
+  margin-bottom: 10px;
+}
+.expertise li {
+  padding: 15px;
+}
+.expertise .expertise-logo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 19px;
+
+  margin-right: 10px;
+
+  color: #e74d06;
+}
+.btn {
+  background: #2c7bfe;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 3px;
+  cursor: pointer;
+}
